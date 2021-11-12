@@ -1,0 +1,39 @@
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+.contenent {
+    display: grid;
+    justify-content: center;
+    margin-top: 18px;
+}
+.contenent form {
+    display: flex;
+    flex-direction: column;
+}
+.contenent form > label {
+    display: flex;
+    font-size: 16px;
+    flex-direction: column;
+    margin: 12px;
+}
+.contenent form > label > input{
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+.contenent > span {
+    margin-top: 12px;
+    text-align: center;
+}
+.btn {
+    background-color: #5ce6d9;
+    border: 1px solid;
+    border-radius: 13px;
+    color: black;
+    font-size: 16px;
+    padding: 7px;
+    text-decoration: none;
+}
+.resultado {
+    margin-top: 12px;
+}

@@ -69,12 +69,21 @@ if (!empty($file_name)) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neubux ejercicio 2</title>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <main>
 
-        <section>
+        <section class="contenent">
+            <h1>Ejercicio 2</h1>
             <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
                 <label for="file">
                     Seleccione un archivo:
@@ -82,6 +91,18 @@ if (!empty($file_name)) {
                 </label>
                 <button type="submit" class="btn">Analizar</button>
             </form>
+
+            <span>
+                <?php echo $err = (!empty($error)) ? $error : '' ; ?>
+            </span>
+            
+            <div class="resulltados">
+                <?php
+                    if (!empty($winner)) {
+                        echo '<a class="btn" href="descarga.php" target="_blank" rel="noopener noreferrer">Ver Ganador</a>';
+                    }
+                ?>
+            </div>
         </section>
 
     </main>
