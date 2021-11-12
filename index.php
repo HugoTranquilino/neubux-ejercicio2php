@@ -96,7 +96,7 @@ if (!empty($file_name)) {
                 <?php echo $err = (!empty($error)) ? $error : '' ; ?>
             </span>
             
-            <div class="resulltados">
+            <div class="resultados">
                 <?php
                     if (!empty($winner)) {
                         echo '<a class="btn" href="descarga.php" target="_blank" rel="noopener noreferrer">Ver Ganador</a>';
